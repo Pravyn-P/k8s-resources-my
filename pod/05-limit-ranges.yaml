@@ -13,16 +13,7 @@ spec:
       cpu: "1"
     min:
       cpu: 100m
-    type: container
-  - default: # this section defines default limits
-      cpu: 500m
-    defaultRequest: # this section defines default requests
-      cpu: 500m
-    max: # max and min define the limit range
-      cpu: "1"
-    min:
-      cpu: 100m
-    type: pod
+    type: container 
 ---
 apiVersion: v1
 kind: Pod
