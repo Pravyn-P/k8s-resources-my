@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: stess
+spec:
+    containers:
+    - image: prawien/stress
+      imagePullPolicy: Always
+      name: stress
+    
