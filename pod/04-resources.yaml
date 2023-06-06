@@ -7,4 +7,4 @@ spec:
     - image: prawien/stress
       imagePullPolicy: Always
       name: stress
-    
+      command: ["sleep","200"]
