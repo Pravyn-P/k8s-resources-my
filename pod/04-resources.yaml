@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-    name: stess
+    name: stress
 spec:
     containers:
     - image: prawien/stress
