@@ -1,0 +1,14 @@
+apiversion: v1
+kind: pod
+metadata:
+  name: label-pod
+  labels: 
+    cource: docker 
+    duration: 25hr
+    trainer: siva
+  annotations: 
+    org.docker.k8s.images.maitainer: siva
+spec:
+  containers:
+  - name: nginx
+    image: nginx
