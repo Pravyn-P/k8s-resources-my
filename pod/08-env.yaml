@@ -12,5 +12,5 @@ spec:
     - name: trainer
       value: siva
     - name: duration
-      value: 25
+      value: 25hrs
   
