@@ -5,10 +5,15 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 10
   selector:
     matchLabels:
       app: nginx
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: 
+      maxUnavailable: 2  # we asked for 10 but we are if 8 are running at the time , one pod is compromised
+      maxSurge: 1   # we asked for 10 pods, but we are ok if 12 are running at the time of upgrade
   template:
     metadata:
       labels:
