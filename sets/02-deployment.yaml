@@ -24,3 +24,8 @@ spec:
         image: nginx:1.14.2
         ports:
         - containerPort: 80
+
+# command to check the deployment status is - kubectl rollout status deployment/<deployment-name>
+# command to view the history of deployments is - kubectl rollout history deployment/<deployment-name>
+# command to go back to just pevious version is - kubectl rollout undo deployment/<deployment-name>
+# command to go back to a specific version is - kubectl rollout history deployment/<deployment-name> --to-revision= <history version number> 
