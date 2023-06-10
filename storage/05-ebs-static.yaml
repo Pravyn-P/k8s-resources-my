@@ -31,7 +31,7 @@ spec:
   resources:
     requests:
       storage: 10Gi
-  Persistentvolume: my-ebs-volume
+  PersistentVolume: my-ebs-volume
 ---
 apiVersion: v1
 kind: Pod
