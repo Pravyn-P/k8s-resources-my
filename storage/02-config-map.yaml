@@ -64,7 +64,7 @@ kind: Pod
 metadata:
   name: web
   labels: 
-    name: web
+  - name: web
     tier: frontend
 spec:
   containers:
